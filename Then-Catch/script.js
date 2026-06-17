@@ -7,14 +7,15 @@ let p1 = new Promise(function(res, rej){
     }, 2000)
 })
 
-async function abcd(){
-    try{
-        let val = await p1;
-        console.log(val);      
-    }
-    catch(error){
-        console.log(error);
-        
-    }
-}
-abcd()
+//  then and catch
+p1.
+then(function(val){
+    console.log( val);
+    
+})
+.catch(function(val){
+    console.log( val); 
+})
+.finally(function(){
+    console.log("I always run ");  
+})
