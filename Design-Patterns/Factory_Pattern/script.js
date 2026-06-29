@@ -27,4 +27,4 @@ function ProductCart(name, prize){
 }
 
 let iphone = ProductCart("iphone", 60000)
-console.log(iphone)
+let kitkat = ProductCart("kitkat", 10)
